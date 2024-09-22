@@ -1,0 +1,129 @@
+@font-face {
+    font-family: PoiretOne;
+    src: url(../fonts/PoiretOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lunasima;
+    src: url(../fonts/Lunasima-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lunasima;
+    src: url(../fonts/Lunasima-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter_18pt-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 76px;
+    max-width: 1672px;
+}
+
+
+
+
+.main{
+    background: url(../img/log-in_bg.png) no-repeat center center / cover;
+    color: #fff;
+    font-family: Inter;
+
+
+
+    &__title{
+        text-align: center;
+        font-size: 57px;
+        font-weight: bold;
+
+    }
+
+    &__block{
+        padding-top: 90px;
+        
+    }
+
+    &__wrap{
+        background-color: #000000;
+        padding: 57px 100px 35px 100px; 
+        border-radius: 24px;
+        width: 700px;
+        height: 863px;
+        margin: 0 auto;
+
+    }
+
+    &__subtitle{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding-top: 7px;
+        font-size: 18px;
+        &-2{
+            text-decoration: underline;
+            font-weight: bold;
+            &:hover{
+                transition: all .3s ease;
+                transform: scale(1.02);
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .form{
+        padding-top: 53px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__input{
+        padding: 19px 20px;
+        background-color: #000000;
+        border: 1px solid white;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+    &__span{
+        text-decoration: underline;
+    }
+
+    &__btn{
+        margin-top: 15px;
+        padding: 20px 17px;
+        border-radius: 15px;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        &:hover{
+            transition: all .3s ease;
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+    }
+
+}

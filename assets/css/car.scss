@@ -1,0 +1,312 @@
+@font-face {
+    font-family: PoiretOne;
+    src: url(../fonts/PoiretOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lunasima;
+    src: url(../fonts/Lunasima-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Lunasima;
+    src: url(../fonts/Lunasima-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter_18pt-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 95px;
+    max-width: 1672px;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0 32px 0;
+        align-items: center;
+        
+    }
+
+    &__ul{
+        display: flex;
+        gap: 38px;
+        font-family: PoiretOne;
+        font-weight: 400;
+        font-size: 27px;
+        color: #fff;
+        align-items: center;
+        &:hover{
+            color: #aaaaaa;
+        }
+    }
+
+    &__li{
+        color: #fff; 
+        
+    }
+    &__li2{
+        width: 84px;
+    }
+
+    &__btn{
+        background-color: #00A3FF;
+        padding: 15px 23px;
+        border-radius: 15px;
+
+    }
+}
+
+.main{
+    background-color: #1C1C1C;
+
+    &__title{
+        margin-top: 77px;
+        font-size: 55px;
+        font-family: Lunasima;
+        color: #fff;
+
+    }
+
+    &__search{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 45px;
+        background-color: #fff;
+        color: #585858;
+        width: 120px;
+        font-size: 19px;
+        padding: 8px 14px;
+        font-family: Lunasima;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+
+        &::after{
+            content: '';
+            display: block;
+            background-image: url(../img/main__search.svg);
+            width: 25px;
+            height: 22px;
+        }
+    }
+
+    &__card-block{
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__card{
+        display: flex;
+        gap: 40px;
+        color: #fff;
+        // &-text{
+
+        // }
+        &-img{
+            width: 460px;
+            height: 400px;    
+        }
+        &-title{
+            margin-top: 14px;
+            font-size: 49px;
+            font-family: Lunasima;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        &-price{
+            color: #28A5FF;
+            font-size: 30px;
+            font-family: Lunasima;
+            font-weight: bold;
+            
+        }
+
+        &-noprice{
+            text-decoration: line-through;
+            color: #A1A1A1;
+            font-size: 25px;
+            font-family: Lunasima;
+            font-weight: bold;
+        }
+
+        &-about{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            max-width: 385px;
+            gap: 40px;
+        }
+        &-harek{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Lunasima;
+            
+        }
+
+        &-about-column1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: Lunasima;
+            font-weight: bold;
+            font-size: 27px;
+        }
+        &-about-column2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: Lunasima;
+            font-weight: bold;
+            font-size: 27px;
+        }
+
+        &-harek1{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            &::before{
+                content: '';
+                display: block;
+                background: url(../img/horse.svg);
+                width: 35px;
+                height: 35px;
+            }
+        }
+        &-harek2{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            &::before{
+                content: '';
+                display: block;
+                background: url(../img/motor.svg);
+                width: 35px;
+                height: 33px;
+            }
+        }
+        &-harek3{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            &::before{
+                content: '';
+                display: block;
+                background: url(../img/privod.svg);
+                width: 35px;
+                height: 35px;
+            }
+        }
+        &-harek4{
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            &::before{
+                content: '';
+                display: block;
+                background: url(../img/time.svg);
+                width: 34px;
+                height: 35px;
+            }
+        }
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 53px;
+        font-family: Lunasima;
+        font-weight: bold;
+        font-size: 27px;
+        background-color: #28A5FF;
+        padding: 20px 13px;
+        border-radius: 15px;
+        width: 250px;
+        height: 67px;
+        
+    }
+
+
+
+}
+
+.footer{
+    margin-top: 125px;
+    color: #fff;
+    font-family:Lunasima;
+    &__img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 175px;
+        margin-bottom: 40px;
+    }
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright{
+        font-weight: 400;
+        width: 160px;
+        font-size: 15px;
+    }
+
+    &__text-info{
+        align-items: center;
+        text-align: center;
+    }
+
+    &__info{
+        font-weight: 400;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    &__info-a{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 5px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    &__other{
+        text-align: center;
+    }
+
+}

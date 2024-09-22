@@ -1,0 +1,126 @@
+@font-face {
+  font-family: PoiretOne;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lunasima;
+  src: url(../fonts/Lunasima-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lunasima;
+  src: url(../fonts/Lunasima-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter_18pt-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter_18pt-Regular.ttf);
+  font-weight: 400;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 76px;
+  max-width: 1380px;
+}
+
+.main {
+  background: url(../img/log-in_bg.png) no-repeat center center/cover;
+  color: #fff;
+  font-family: Inter;
+  height: 100vh;
+}
+.main__block {
+  padding-top: 136px;
+}
+.main__wrap {
+  background-color: #000000;
+  padding: 57px 100px 128px 100px;
+  border-radius: 24px;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+.main__title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 63px;
+  text-align: center;
+}
+.main__subtitle {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+.main__subtitle-none2 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.main__login {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 50px;
+}
+.main__input-email {
+  width: 500px;
+  padding: 22px 20px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: Inter;
+  color: #fff;
+}
+.main__input-password {
+  width: 500px;
+  padding: 22px 20px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-family: Inter;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: -10px;
+}
+.main__forgot {
+  color: #6B839F;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+}
+.main__btn {
+  display: block;
+  margin: 56px auto;
+  width: 136px;
+  color: #000000;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #fff;
+  padding: 18px 30px;
+  border-radius: 15px;
+}
+.main__btn:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.025);
+}
